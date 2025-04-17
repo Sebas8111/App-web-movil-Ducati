@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
 import { UsuariosService } from 'src/app/services/usuarios.service';
 declare var $:any;
 @Component({
   selector: 'app-registro-screen',
   templateUrl: './registro-screen.component.html',
-  styleUrls: ['./registro-screen.component.scss']
+  styleUrls: ['./registro-screen.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class RegistroScreenComponent implements OnInit{
 
@@ -58,6 +59,14 @@ export class RegistroScreenComponent implements OnInit{
       this.router.navigate(["login"]);
     }
 
+    public validarSoloLetras(event: KeyboardEvent) {
+      const charCode = event.key.charCodeAt(0);
+      const regex = /^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]$/;
+
+      if (!regex.test(event.key)) {
+          event.preventDefault();
+      }
+  }
 
 
 
@@ -81,5 +90,8 @@ export class RegistroScreenComponent implements OnInit{
       this.hide_1 = false;
     }
   }
+
+
+
 
 }

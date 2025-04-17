@@ -182,11 +182,14 @@ mat-label{
 .form-login ::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
   background-color: #000000;
   color: #FFFFFF;
+  width: 80px !important;  /* Aumenta el tamaño del checkbox */
+  height: 80pxpx !important; /* Aumenta el tamaño del checkbox */
 }
 
 //Cambiar color de la palomita de checked
 .form-login :ng-deep .mat-checkbox-checkmark-path {
   stroke: #FFFFFF !important;
+  background-color: red !important; /* Cambia el color de fondo cuando está marcado */
 }
 
 .mat-option {
@@ -320,3 +323,7 @@ mat-label{
 ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
   stroke: #FFFFFF;
 }
+
+
+
+

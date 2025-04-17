@@ -25,6 +25,8 @@ import { LeftSidebarComponent } from './partials/left-sidebar/left-sidebar.compo
 import { HeaderAppComponent } from './partials/header-app/header-app.component';
 import { FooterAppComponent } from './partials/footer-app/footer-app.component';
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component';
+import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
+import { PoliticaPrivacidadScreenComponent } from './screens/politica-privacidad-screen/politica-privacidad-screen.component';
 
 
 
@@ -37,7 +39,10 @@ import { HomeScreenComponent } from './screens/home-screen/home-screen.component
     LeftSidebarComponent,
     HeaderAppComponent,
     FooterAppComponent,
-    HomeScreenComponent
+    HomeScreenComponent,
+    BasesPromocionScreenComponent,
+    PoliticaPrivacidadScreenComponent,
+
   ],
   imports: [
     BrowserModule,
